@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeAlpha Image Gallery</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Modern Image Gallery</h1>
+    <p>Responsive gallery with lightbox, filters, and smooth animations</p>
+  </header>
+
+  <div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="tech">Tech</button>
+  </div>
+
+  <section class="gallery">
+    <div class="card nature">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Nature">
+    </div>
+
+    <div class="card city">
+      <img src="https://picsum.photos/id/1011/600/400" alt="City">
+    </div>
+
+    <div class="card tech">
+      <img src="https://picsum.photos/id/180/600/400" alt="Tech">
+    </div>
+
+    <div class="card nature">
+      <img src="https://picsum.photos/id/1016/600/400" alt="Nature">
+    </div>
+
+    <div class="card city">
+      <img src="https://picsum.photos/id/1012/600/400" alt="City">
+    </div>
+
+    <div class="card tech">
+      <img src="https://picsum.photos/id/250/600/400" alt="Tech">
+    </div>
+  </section>
+
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <div class="controls">
+      <button id="prev">❮ Prev</button>
+      <button id="next">Next ❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
